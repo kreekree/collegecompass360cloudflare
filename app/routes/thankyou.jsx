@@ -60,8 +60,8 @@ export default function ThankYouRoute() {
      <div className="flex items-center justify-center min-h-screen p-b-12 bg-cover bg-center" style={{ backgroundImage: "url(https://d24rcyp2fqkft.cloudfront.net/assets/images/bg.jpg)" }}>
     <div className="flex flex-col items-center justify-center text-center mx-4">
         <div className="text-white">
-            <div className="text-5xl font-bold mb-3 font-roboto mx-4">Match to the right online college.</div>
-            <div className="text-lg">Compare accredited schools and request more information.</div>
+            <div className="text-5xl font-bold mb-3 font-roboto m-4">Match to the right online college.</div>
+            <div className="text-lg mx-4">Compare accredited schools and request more information.</div>
         </div>
         <div className="bg-white p-10 rounded-md shadow-md mt-4 w-4/6 mb-12">
             {messages}
