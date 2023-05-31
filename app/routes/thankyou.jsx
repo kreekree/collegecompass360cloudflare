@@ -52,7 +52,7 @@ export default function ThankYouRoute() {
         </div>,
       ]);
     } else {
-      navigate('https://email.nogigiddy.com/c/692940af912ed913'); // replace this with your next URL
+      window.location.href = 'https://email.nogigiddy.com/c/692940af912ed913'
     }
   }, [counter]);
 
