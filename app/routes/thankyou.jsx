@@ -63,7 +63,7 @@ export default function ThankYouRoute() {
           <div className="text-5xl font-bold mb-3 font-roboto">Match to the right online college.</div>
           <div className="text-lg">Compare accredited schools and request more information.</div>
         </div>
-        <div className="bg-white p-10 rounded-md shadow-md mt-4 w-4/6">
+        <div className="bg-white p-10 rounded-md shadow-md mt-4 w-4/6 mb-12">
           {messages}
         </div>
       </div>
