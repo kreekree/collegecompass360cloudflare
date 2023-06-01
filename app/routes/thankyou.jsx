@@ -1,6 +1,8 @@
 // file: app/routes/thankyou.tsx
 import { useEffect, useState } from 'react';
 import { useNavigate, useSearchParams } from '@remix-run/react';
+import { Link } from 'react-router-dom';
+import Footer from '../components/Footer';
 
 export default function ThankYouRoute() {
   const [counter, setCounter] = useState(0);
@@ -56,7 +58,8 @@ export default function ThankYouRoute() {
     }
   }, [counter]);
 
-    return (
+  return (
+      <>
      <div className="flex items-center justify-center min-h-screen p-b-12 bg-cover bg-center" style={{ backgroundImage: "url(https://d24rcyp2fqkft.cloudfront.net/assets/images/bg.jpg)" }}>
     <div className="flex flex-col items-center justify-center text-center mx-4">
         <div className="text-white">
@@ -66,8 +69,14 @@ export default function ThankYouRoute() {
         <div className="bg-white p-10 rounded-md shadow-md mt-4 w-4/6 mb-12">
             {messages}
         </div>
+        </div>
+       
+      </div>
+      <div className="flex flex-col justify-between bg-white text-black px-6 py-8">
+     
+      <Footer />
     </div>
-</div>
+      </>
 
 
   );
