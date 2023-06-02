@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react';
 import { useNavigate, useSearchParams } from '@remix-run/react';
 import { Link } from 'react-router-dom';
-import Footer from '../components/Footer';
+import Footer from '../components/footer';
 
 export default function ThankYouRoute() {
   const [counter, setCounter] = useState(0);
