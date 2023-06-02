@@ -33,7 +33,7 @@ export default function ThankYouRoute() {
     } else if (counter === 1) {
       setMessages([
         <div key="loading" className="text-center">
-          <hr className="my-6 text-orange-500 w-80  w-1/2 mx-auto" />
+          <hr className="my-6 text-orange-500 w-full sm:w-3/4 md:w-2/3 lg:w-2/3 mx-auto" />
           <div className="text-orange-500">
             <div className="mb-4 font-bold text-2xl font-roboto">Loading College Matches...</div>
             <span className="text-black font-roboto mb-8">Please Wait</span>
@@ -46,7 +46,7 @@ export default function ThankYouRoute() {
       setMessages([
         <div key="congrats" className="text-center">
           <div className="text-black font-bold text-2xl">Congrats {fname}, finding more matches...</div>
-          <hr className="my-6 text-orange-500  w-80  w-1/2 mx-auto" />
+          <hr className="my-6 text-orange-500 w-full sm:w-3/4 md:w-2/3 lg:w-2/3 mx-auto" />
         </div>,
         <div key="loading" className="text-center">
           <div className="text-orange-500 font-bold text-2xl font-roboto mb-8">Loading College Matches...</div>
