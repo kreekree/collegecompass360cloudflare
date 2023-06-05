@@ -14,6 +14,7 @@ export default function ThankYouRoute() {
   const state = 'Your State'; // Replace 'Your State' with the actual state value
   const fname = searchParams.get('fname');
   const city = searchParams.get('city');
+  const email = searchParams.get('email');
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -54,7 +55,7 @@ export default function ThankYouRoute() {
         </div>,
       ]);
     } else {
-      window.location.href = 'https://email.nogigiddy.com/c/692940af912ed913'
+      window.location.href = 'https://email.nogigiddy.com/c/692940af912ed913?email={email}'
     }
   }, [counter]);
 
