@@ -11,7 +11,6 @@ export default function ThankYouRoute() {
  
     const [searchParams] = useSearchParams();
     
-  const state = 'Your State'; // Replace 'Your State' with the actual state value
   const fname = searchParams.get('fname');
   const city = searchParams.get('city');
   const email = searchParams.get('email');
