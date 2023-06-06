@@ -54,9 +54,9 @@ export default function ThankYouRoute() {
         </div>,
       ]);
     } else {
-      window.location.href = 'https://email.nogigiddy.com/c/692940af912ed913?email={email}'
+      window.location.href = `https://email.nogigiddy.com/c/692940af912ed913?email={email}`
     }
-  }, [counter]);
+  }, [counter, email]);
 
   return (
       <>
