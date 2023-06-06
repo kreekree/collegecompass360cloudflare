@@ -15,6 +15,7 @@ export default function ThankYouRoute() {
   const city = searchParams.get('city');
   const email = searchParams.get('email');
   const utm_source = searchParams.get('utm_source');
+  const utm_medium = searchParams.get('utm_medium');
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -55,9 +56,9 @@ export default function ThankYouRoute() {
         </div>,
       ]);
     } else {
-      window.location.href = `https://email.nogigiddy.com/c/692940af912ed913?email=${email}&utm_source=${utm_source}`
+      window.location.href = `https://email.nogigiddy.com/c/692940af912ed913?email=${email}&utm_source=${utm_source}&utm_medium=${utm_medium}`
     }
-  }, [counter, email, utm_source]);
+  }, [counter, email, utm_source, utm_medium]);
 
   return (
       <>
