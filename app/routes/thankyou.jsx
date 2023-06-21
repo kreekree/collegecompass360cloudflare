@@ -67,7 +67,7 @@ export default function ThankYouRoute() {
         </div>,
       ])
     } else {
-      window.location.href = `https://email.nogigiddy.com/c/692940af912ed913?email=${email}&utm_source=${utm_source}&utm_medium=${utm_medium}&utm_campaign=${utm_campaign}&location=${location}&job_title={job_title}`
+      window.location.href = `https://email.nogigiddy.com/c/692940af912ed913?email=${email}&utm_source=${utm_source}&utm_medium=${utm_medium}&utm_campaign=${utm_campaign}&location=${location}&job_title=${job_title}`
     }
   }, [
     counter,
